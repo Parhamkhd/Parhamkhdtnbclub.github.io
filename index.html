@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets\styles\style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script>
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('header').addClass('black');
+            } else {
+                $('header').removeClass('black');
+
+            }
+        })
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+
+
+        
+    </script>
+
+</head>
+
+<body>
+    <div class="hero">
+        <header>
+            <a onclick="topFunction()" id="myBtn" title="Go to top"><img src="up-arrow.svg" alt="" width="50px;" height="50px;"></a>
+
+            <h1 id="logo">Logo</h1>
+
+            <nav>
+                <ul class="main-nav">
+
+                    <li>
+                        <a href="">
+                            <span class="spanLeft">[</span> خانه
+                            <span class="spanRight">]</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">
+
+                            <span class="spanLeft">[</span> مسابقه
+                            <span class="spanRight">]</span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="spanLeft">[</span> بلاگ
+                            <span class="spanRight">]</span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="spanLeft">[</span> درباره ما
+                            <span class="spanRight">]</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="spanLeft">[</span> تماس با ما
+                            <span class="spanRight">]</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-links">
+                <div>
+                    <a class="nav-links-item" id="signup" href="#nonass">ثبت نام</a>
+
+                    <a class="nav-links-item" id="login" href="#nani">ورود</a>
+                </div>
+
+            </div>
+
+        </header>
+
+        <div class="home-area">
+
+            <h2>اولین دوره مسابقه‌ی برنامه‌نویسی دانشجویی</h2>
+            <h3>دانشگاه آزاد اسلامی - واحد تهران شمال</h3>
+            <button>ثبت نام</button>
+
+            <div class="timer-section">
+
+                <div class="timer">
+
+                    <h4 id="timer-text">:مهلت باقی‌مانده برای ثبت نام</h4>
+
+                    <div class="clock">
+
+                        <div class="clock-part">
+                            <div class="dhm" id="days">
+
+                                <p class="numz" id="days-num"></p>
+
+                            </div>
+                            <p class=clock-part-title>روز</p>
+
+                        </div>
+
+                        <div class="clock-part">
+                            <div class="dhm" id="hours">
+
+                                <p class="numz" id="hours-num"></p>
+
+                            </div>
+
+                            <p class=clock-part-title>ساعت</p>
+                        </div>
+
+                        <div class="clock-part">
+                            <div class="dhm" id="minutes">
+
+                                <p class="numz" id="minutes-num"></p>
+
+                            </div>
+                            <p class=clock-part-title>دقیقه</p>
+
+                        </div>
+
+                        <div class="clock-part">
+                            <div class="dhm" id="seconds">
+
+                                <p class="numz" id="seconds-num"></p>
+
+                            </div>
+                            <p class=clock-part-title>ثانیه</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="moto">
+            <h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</h3>
+
+            <p>لورم ایپسوم متن ساختگی با تولید سا دگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+        </div>
+
+        <div class="advertise">
+            <h3>لورم ایپسوم </h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+
+            <img src="assets/images/prob.svg" alt="" width="700px;" height="400px;">
+        </div>
+
+        <div class="testimonials">
+            <h3>لورم ایپسوم</h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک اس</p>
+
+            <div class="testimonials-content-box">
+                <div class="row1">
+
+                    <div class="items-row1">
+                        <div class="inner-content">
+                            <div class="items-banner">
+                                <img src="assets\images\coding.svg" alt="">
+                            </div>
+                            <h2>تیتر</h2>
+
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+                        </div>
+
+                    </div>
+
+                    <div class="items-row1">
+
+                        <div class="inner-content">
+                            <div class="items-banner">
+                                <img src="assets\images\keywords.svg" alt="">
+
+                            </div>
+                            <h2>تیتر</h2>
+
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+
+                        </div>
+                    </div>
+
+                    <div class="items-row1">
+
+                        <div class="inner-content">
+                            <div class="items-banner">
+                                <img src="assets\images\map.svg" alt="">
+
+                            </div>
+                            <h2>تیتر</h2>
+
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row2">
+
+                    <div class="items-row2">
+                        <div class="inner-content">
+                            <div class="items-banner">
+                                <img src="assets\images\search.svg" alt="">
+
+                            </div>
+                            <h2>تیتر</h2>
+
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+                        </div>
+                    </div>
+
+                    <div class="items-row2">
+                        <div class="inner-content">
+                            <div class="items-banner">
+                                <img src="assets\images\newspaper.svg" alt="">
+
+                            </div>
+                            <h2>تیتر</h2>
+
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+                        </div>
+                    </div>
+
+                    <div class="items-row2">
+
+                        <div class="inner-content">
+                            <div class="items-banner">
+                                <img src="assets\images\analytics.svg" alt="">
+
+                            </div>
+                            <h2>تیتر</h2>
+
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="misc">
+
+            <h1>لورم ایپسوم</h1>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+
+            <div class="misc-row">
+
+                    <div class="misc-items-row">
+                        <div class="inner-content">
+                            <div class="triangle">
+                                    <img class="more-arrow" src="assets\images\back.svg" alt="" >
+                            </div>
+                         
+                            <div class="misc-items-banner">
+                                <img src="assets\images\coding.svg" alt="">
+                            </div>
+                            <h2>تیتر</h2>
+
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+                        </div>
+
+                    </div>
+
+                    <div class="misc-items-row">
+
+                        <div class="misc-inner-content">
+                                <div class="triangle">
+                                        <img class="more-arrow" src="assets\images\back.svg" alt="" >
+                                </div>
+                            <div class="misc-items-banner">
+                                <img src="assets\images\keywords.svg" alt="">
+
+                            </div>
+                            <h2>تیتر</h2>
+
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+
+                        </div>
+                    </div>
+
+                    <div class="misc-items-row">
+
+                        <div class="misc-inner-content">
+                                <div class="triangle">
+                                        <img class="more-arrow" src="assets\images\back.svg" alt="" >
+                                </div>
+                            <div class="misc-items-banner">
+                                <img src="assets\images\map.svg" alt="">
+
+                            </div>
+                            <h2>تیتر</h2>
+
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="misc2">
+
+                    <h1>لورم ایپسوم</h1>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+            <div class="misc2-row">
+
+                    <div class="misc2-items-row">
+                        <div class="misc2-inner-content">
+
+                                <img  class="misc2-imgs"src="assets\images\map.svg" alt="">
+
+                            <h2>تیتر</h2>
+
+                            <ul>
+                                    <li><span>.</span>متن امتحانی</li>
+                                    <li><span>.</span>متن امتحانی</li>
+                                    <li><span>.</span>متن امتحانی</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="misc2-items-row">
+
+                        <div class="misc2-inner-content">
+
+                                <img class="misc2-imgs" src="assets\images\map.svg" alt="">
+
+                            <h2>تیتر</h2>
+
+                            <ul>
+                                    <li><span>.</span>متن امتحانی</li>
+                                    <li><span>.</span>متن امتحانی</li>
+                                    <li><span>.</span>متن امتحانی</li>
+                                    <li><span>.</span>متن امتحانی</li>
+
+                                </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="misc2-items-row">
+
+                        <div class="misc2-inner-content">
+                                <img class="misc2-imgs"src="assets\images\map.svg" alt="">
+
+                            <h2>تیتر</h2>
+
+                            <ul>
+                                    <li><span>.</span>متن امتحانی</li>
+                                    <li><span>.</span>متن امتحانی</li>
+                                    <li><span>.</span>متن امتحانی</li>
+                                    <li><span>.</span>متن امتحانی</li>
+                                    <li><span>.</span>متن امتحانی</li>
+                                    <li><span>.</span>متن امتحانی</li>
+                                    <li><span>.</span>متن امتحانی</li>
+                                    <li><span>.</span>متن امتحانی</li>
+
+                                </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="accomplishments">
+                <h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h3>
+            </div>
+
+    </main>
+
+    <footer>
+<div class="upper-section">
+
+    <div class="footer-content">
+        <h4>تیتر</h4>
+        <div class="footer-links">
+                <a href="">لینک</a>
+                <a href="">لینک</a>
+        
+                <a href="">لینک</a>
+        
+                <a href="">لینک</a>
+        </div>
+
+    </div>
+
+    <div class="footer-content">
+            <h4>تیتر</h4>
+
+            <div class="footer-links">
+                    <a href="">لینک</a>
+                    <a href="">لینک</a>
+            
+                    <a href="">لینک</a>
+            
+                    <a href="">لینک</a>
+            </div>
+        </div>
+
+        <div class="footer-content">
+                <h4>تیتر</h4>
+<div class="footer-links">
+        <a href="">لینک</a>
+        <a href="">لینک</a>
+
+        <a href="">لینک</a>
+
+        <a href="">لینک</a>
+</div>
+
+            </div>
+
+            <div class="footer-content">
+                    <h4>تیتر</h4>
+                    <div class="footer-links">
+                            <a href="">لینک</a>
+                            <a href="">لینک</a>
+                    
+                            <a href="">لینک</a>
+                    
+                            <a href="">لینک</a>
+                    </div>
+                </div>
+</div>
+
+<div class="lower-section">
+    <div class="lower-section-content">
+            <p>© 2019 TNBCLUB. All Rights Reserved</p>
+
+<div class="additional-links">
+<a href="">درباره ما</a>
+<a href="">بلاگ</a>
+<a href="">تماس با ما</a>
+
+
+</div>
+    </div>
+</div>
+
+    </footer>
+
+    <script src="assets\scripts\app.js"></script>
+</body>
+
+</html>
