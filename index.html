@@ -8,6 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="assets\styles\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
@@ -45,12 +46,36 @@
 
         
     </script>
-
 </head>
 
 <body>
+
+        <div id="overlay">
+
+            </div>
+            <div id="login-overlay">
+                <div class="login-overlay-triangle"></div>
+    <img id="cancel"src="assets\images\cancel.svg" alt="">
+
+                <h4>ورود</h4>
+
+<form class="login-form" action="">
+
+    <input type="email" name="student email" placeholder="Email" id="email-lable" dir="ltr">
+
+    <input type="password" name="password" placeholder="Password" id="password-lable" dir="ltr">
+
+    <button class="login-btn">ورود</button>
+    <p>رمز عبور خود را فراموش کرده اید؟</p>
+</form>
+
+            </div>
     <div class="hero">
+        
+
         <header>
+
+
             <a onclick="topFunction()" id="myBtn" title="Go to top"><img src="up-arrow.svg" alt="" width="50px;" height="50px;"></a>
 
             <h1 id="logo">Logo</h1>
@@ -482,6 +507,34 @@
     </footer>
 
     <script src="assets\scripts\app.js"></script>
+    <script>
+    
+    
+    document.getElementById('login').addEventListener('click' ,function(){
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('login-overlay').style.display = 'block';
+        document.getElementById('overlay').classList.add('animated', 'fadeInDown');
+        document.getElementById('login-overlay').classList.add('animated', 'fadeInDown');
+
+
+
+
+    });
+
+    document.getElementById('overlay').addEventListener('click', function(){
+        document.getElementById('overlay').style.display ='none';
+        document.getElementById('login-overlay').style.display = 'none';
+
+    });
+
+    document.getElementById('cancel').addEventListener('click', function(){
+        document.getElementById('overlay').style.display ='none';
+        document.getElementById('login-overlay').style.display = 'none';
+
+    });
+
+
+    </script>
 </body>
 
 </html>
