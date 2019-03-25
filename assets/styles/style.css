@@ -1299,6 +1299,12 @@ background: rgb(244, 247, 248);
 
 @media only screen and (max-width: 635px){
 
+
+    .home-area-content h1{
+
+        padding-top: 140px;
+    }
+
     .misc2{
         text-align: center;
         padding-top: 40px;
@@ -1309,11 +1315,11 @@ background: rgb(244, 247, 248);
     }
     
     .misc2 h2{
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .misc2 ul li{
-        font-size: 13px;
+        font-size: 16px;
     }
     
     .misc2-row{  
@@ -1348,8 +1354,8 @@ background: rgb(244, 247, 248);
     .misc2-imgs{
         position: absolute;
         margin-left: 20px;
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
 
 
@@ -1388,7 +1394,7 @@ background: rgb(244, 247, 248);
         .items-row1{
             text-align: center;
             border: 1px dashed rgb(216, 216, 216);
-            width: 30vw;
+            width: 32vw;
             height: 175px;
             overflow: hidden;
             border-top: none;
@@ -1403,7 +1409,7 @@ background: rgb(244, 247, 248);
             text-align: center;
             border: 1px dashed rgb(216, 216, 216);
             border-left: none;
-            width: 30vw;
+            width: 32vw;
             height: 205px;
             overflow: hidden;
         
@@ -1624,13 +1630,7 @@ background: rgb(244, 247, 248);
     
     }
     
-    .misc2 h2{
-        font-size: 16px;
-    }
-    
-    .misc2 ul li{
-        font-size: 11px;
-    }
+
     
     .misc2-row{  
         margin-top: 20px;
