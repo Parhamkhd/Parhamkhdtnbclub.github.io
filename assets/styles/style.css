@@ -1315,11 +1315,11 @@ background: rgb(244, 247, 248);
     }
     
     .misc2 h2{
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .misc2 ul li{
-        font-size: 16px;
+        font-size: 15px;
     }
     
     .misc2-row{  
@@ -1353,9 +1353,9 @@ background: rgb(244, 247, 248);
     
     .misc2-imgs{
         position: absolute;
-        margin-left: 20px;
-        width: 30px;
-        height: 30px;
+        margin-left: 10px;
+        width: 23px;
+        height: 23px;
     }
 
 
@@ -1664,7 +1664,7 @@ background: rgb(244, 247, 248);
     .misc2-imgs{
         position: absolute;
         margin-left: 10px;
-        width: 30px;
-        height: 30px;
+        width: 23px;
+        height: 23px;
     }
 }
