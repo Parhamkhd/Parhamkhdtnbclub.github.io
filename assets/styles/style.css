@@ -1143,6 +1143,11 @@ header.black .hamburger{
 
 
 @media only screen and (max-width: 1202px) {
+    
+    .home-area-content h1{
+
+        padding-top: 140px;
+    }
 
     .misc .triangle{
         display: none;
