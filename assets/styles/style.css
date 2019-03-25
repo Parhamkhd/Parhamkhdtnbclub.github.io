@@ -1648,6 +1648,10 @@ background: rgb(244, 247, 248);
         vertical-align: text-top;
         color: rgb(81, 85, 87);
     }
+
+    .misc2-items-row:nth-child(1){
+        padding-left: 0px;
+    }
     
     
     .misc2-inner-content ul{
@@ -1664,7 +1668,7 @@ background: rgb(244, 247, 248);
     .misc2-imgs{
         position: absolute;
         margin-left: 10px;
-        width: 23px;
-        height: 23px;
+        width: 18px;
+        height: 18px;
     }
 }
