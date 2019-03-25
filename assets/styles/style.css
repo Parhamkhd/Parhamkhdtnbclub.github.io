@@ -287,7 +287,7 @@ padding-top: 40px;
 
 padding-bottom: 40px;
 
-background: rgb(244, 247, 248);
+/* background: rgb(244, 247, 248); */
 text-align: center;
 }
 
@@ -315,7 +315,7 @@ text-align: center;
 .items-row1{
     text-align: center;
     border: 1px dashed rgb(216, 216, 216);
-    width: 390px;
+    width: 25vw;
     height: 175px;
     overflow: hidden;
     border-top: none;
@@ -335,7 +335,7 @@ text-align: center;
     text-align: center;
     border: 1px dashed rgb(216, 216, 216);
     border-left: none;
-    width: 390px;
+    width: 25vw;
     height: 205px;
     overflow: hidden;
 
