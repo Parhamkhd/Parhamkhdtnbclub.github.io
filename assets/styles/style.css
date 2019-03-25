@@ -1032,11 +1032,13 @@ cursor: pointer;
 .hamburger{
     display: none;
     margin-right: 40px;
+    transition: 0.25s;
+
 }
 
 header.black .hamburger{
     margin-top:15px;
-    transition: 0.25s
+    transition: 0.25s;
 }
   
   /* Icon 1 */
@@ -1134,6 +1136,11 @@ header.black .hamburger{
 
 
     }
+
+
+}
+
+@media only screen and (max-width: 1186px) {
 
 
 }
