@@ -50,6 +50,8 @@
 
 <body>
 
+
+
         <div id="overlay">
 
             </div>
@@ -70,7 +72,11 @@
 </form>
 
             </div>
-    <div class="hero">
+
+            <div class="mobile-menu" id="mobileMenu">
+
+            </div>
+    <div class="hero" id="main">
         
 
         <header>
@@ -131,7 +137,7 @@
 
             </div>
 
-            <div class="hamburger">
+            <div class="hamburger" id="ham" onclick="openClose()">
                     <div id="nav-icon3">
                             <span></span>
                             <span></span>
@@ -543,6 +549,30 @@
         document.getElementById('login-overlay').style.display = 'none';
 
     });
+
+    var mobileDisplay = document.getElementById('mobileMenu');
+
+function openClose(){
+    if(mobileDisplay.style.display == ''){
+        mobileDisplay.style.display = "block";
+        document.getElementById('mobileMenu').classList.add('animated', 'fadeInDown');
+
+    }else if(mobileDisplay.style.display == 'block'){
+        mobileDisplay.style.display = "";
+
+    }
+    
+}
+    
+
+$(window).resize(function() {
+    if(window.innerWidth >= 990){
+        mobileDisplay.style.display = "";
+        document.getElementById('nav-icon3').classList.remove('open');
+
+    }
+});
+
 
 
     </script>
