@@ -1043,9 +1043,8 @@ header.black .hamburger{
   
   #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
     width: 35px;
-    height: 45px;
+    /* height: 45px; */
     position: relative;
-    margin: 50px auto;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -1065,6 +1064,7 @@ header.black .hamburger{
     background: #ffffff;
     border-radius: 9px;
     opacity: 1;
+    margin-top: -18px;
     left: 0;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1126,14 +1126,32 @@ header.black .hamburger{
 
   .mobile-menu{
       position: fixed;
-      background: #000000d7;
+      background: #000000ec;
       display: none;
       width: 100vw;
       height: 100vh;
   }
 
+.mobile-menu-content{
+    margin-top: 120px;
+    text-align: center;
+    color: white;
+}
 
+.mobile-menu-content h4:first-child{
+    border-top: 1px solid rgba(255, 255, 255, 0.548);
+}
 
+.mobile-menu-content h4{
+    padding: 20px;
+    cursor: pointer;
+border-bottom: 1px solid rgba(255, 255, 255, 0.548);
+}
+
+.mobile-menu-content a{
+    color: white;
+    text-decoration: none;
+}
 
 
 @media only screen and (max-width: 1320px) {
@@ -1212,6 +1230,8 @@ header.black .hamburger{
 
 
 @media only screen and (max-width: 990px) {
+
+
 
     .moto p{
         padding-top: 20px; 
@@ -1641,10 +1661,7 @@ background: rgb(244, 247, 248);
         padding-top: 40px;
         padding-bottom: 40px;
     background: rgb(244, 247, 248);
-    
-    
     }
-    
 
     
     .misc2-row{  
@@ -1666,6 +1683,7 @@ background: rgb(244, 247, 248);
 
     .misc2-items-row:nth-child(1){
         padding-left: 0px;
+        margin-left: -12px;
     }
     
     
@@ -1686,4 +1704,99 @@ background: rgb(244, 247, 248);
         width: 18px;
         height: 18px;
     }
+
+
+    footer{
+        background: rgb(49, 53, 59);
+        color: white;
+        text-align: center;
+    
+    }
+    
+    .footer-content{
+        display: inline-block;
+        padding: 50px;
+        vertical-align: text-top;
+        text-align: right;
+    }
+    
+    .footer-links{
+        margin-top: 10px;
+    }
+    
+    .footer-content a{
+    display: block;
+    color: rgb(87, 90, 98);
+    text-decoration: none;
+    text-align: right;
+    transition: 0.25s;
+    }
+    
+    .footer-content a:hover{
+        color: rgb(255, 255, 255);
+    
+    transition: 0.25s;
+    
+    }
+    
+    .lower-section{
+        width: 90%;
+        margin: 0 auto;
+        border-top: 1px solid rgb(72, 76, 82);
+    }
+    
+    .lower-section-content{
+    margin-top: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    }
+    
+    .lower-section-content>p{
+    font-size: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+    float: left;
+    }
+    
+    .additional-links a{
+    font-size: 10px;
+
+    }
+
+
+    footer{
+        background: rgb(49, 53, 59);
+        color: white;
+        text-align: center;
+    
+    }
+    
+    .footer-content{
+        display: inline-block;
+        padding: 30px;
+        vertical-align: text-top;
+        text-align: right;
+    }
+    
+    .footer-links{
+        margin-top: 10px;
+    }
+    
+.footer-content h4{
+    font-size: 15px;
+}
+
+    .footer-content a{
+    display: block;
+    font-size: 13px;
+    color: rgb(87, 90, 98);
+    text-decoration: none;
+    text-align: right;
+    transition: 0.25s;
+    }
+
+
+
+
 }

@@ -74,7 +74,19 @@
             </div>
 
             <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-content">
+                    <a href="#"> <h4>خانه</h4></a>
+                    <a href="#"><h4>مسابقه</h4></a> 
+                    <a href="#"><h4>بلاگ</h4></a> 
+                    <a href="login.html"><h4>ورود</h4></a> 
+                    <a href="signup.html"><h4>ثبت نام</h4></a> 
 
+
+
+
+       
+
+                </div>
             </div>
     <div class="hero" id="main">
         
@@ -523,59 +535,8 @@
 
     </footer>
 
+    <script src="assets\scripts\clock.js"></script>
     <script src="assets\scripts\app.js"></script>
-    <script>
-    
-    
-    document.getElementById('login').addEventListener('click' ,function(){
-        document.getElementById('overlay').style.display = 'block';
-        document.getElementById('login-overlay').style.display = 'block';
-        document.getElementById('overlay').classList.add('animated', 'fadeInDown');
-        document.getElementById('login-overlay').classList.add('animated', 'fadeInDown');
-
-
-
-
-    });
-
-    document.getElementById('overlay').addEventListener('click', function(){
-        document.getElementById('overlay').style.display ='none';
-        document.getElementById('login-overlay').style.display = 'none';
-
-    });
-
-    document.getElementById('cancel').addEventListener('click', function(){
-        document.getElementById('overlay').style.display ='none';
-        document.getElementById('login-overlay').style.display = 'none';
-
-    });
-
-    var mobileDisplay = document.getElementById('mobileMenu');
-
-function openClose(){
-    if(mobileDisplay.style.display == ''){
-        mobileDisplay.style.display = "block";
-        document.getElementById('mobileMenu').classList.add('animated', 'fadeInDown');
-
-    }else if(mobileDisplay.style.display == 'block'){
-        mobileDisplay.style.display = "";
-
-    }
-    
-}
-    
-
-$(window).resize(function() {
-    if(window.innerWidth >= 990){
-        mobileDisplay.style.display = "";
-        document.getElementById('nav-icon3').classList.remove('open');
-
-    }
-});
-
-
-
-    </script>
 </body>
 
 </html>
