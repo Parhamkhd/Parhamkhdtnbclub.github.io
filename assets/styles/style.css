@@ -966,6 +966,7 @@ color: rgb(54, 165, 217);
     margin: 0 auto;
     margin-top: 50px;
     height: 360px;
+    border-radius: 4px;
 
     -webkit-box-shadow: 0px 0px 43px -7px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 43px -7px rgba(0,0,0,0.75);
@@ -1547,7 +1548,7 @@ background: rgb(244, 247, 248);
         color: black;
         width: 90%;
         margin: 0 auto;
-        margin-top: 50px;
+        margin-top: 20px;
         border-radius: 4px;
         height: 420px;
         -webkit-box-shadow: 0px 0px 43px -7px rgba(0,0,0,0.75);
