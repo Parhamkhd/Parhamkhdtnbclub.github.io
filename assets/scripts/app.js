@@ -49,6 +49,5 @@ $(window).resize(function() {
         document.getElementById('overlay').style.display = 'none';
         document.getElementById('login-overlay').style.display = 'none';
 
-
     }
 });
