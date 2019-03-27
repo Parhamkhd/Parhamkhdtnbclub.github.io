@@ -1061,7 +1061,7 @@ header.black .hamburger{
     position: absolute;
     height: 4px;
     width: 100%;
-    background: #ffffff;
+    background: #ffe4e4;
     border-radius: 9px;
     opacity: 1;
     margin-top: -18px;
@@ -1126,7 +1126,7 @@ header.black .hamburger{
 
   .mobile-menu{
       position: fixed;
-      background: #000000ec;
+      background: rgba(0, 0, 0, 0.925);
       display: none;
       width: 100vw;
       height: 100vh;
@@ -1230,7 +1230,6 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.548);
 
 
 @media only screen and (max-width: 990px) {
-
 
 
     .moto p{

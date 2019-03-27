@@ -44,4 +44,11 @@ $(window).resize(function() {
         document.getElementById('nav-icon3').classList.remove('open');
 
     }
+
+    if(window.innerWidth<990){
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('login-overlay').style.display = 'none';
+
+
+    }
 });
