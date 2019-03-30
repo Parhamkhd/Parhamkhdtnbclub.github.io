@@ -3,6 +3,11 @@
     src: url(../fonts/IRANSansWeb.ttf);
 }
 
+@font-face{
+    font-family: Space;
+    src: url(../fonts/Spaceport_2006.otf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -44,6 +49,20 @@ header{
     color: white;
     transition: 0.25s;
     text-align: right;
+}
+#logo-link{
+    color: white;
+    text-decoration: none;
+
+}
+
+#logo-text{
+    font-family: Space;
+    font-size: 28px; 
+    cursor: pointer; 
+    display: inline-block;
+    /* width: 50px;
+    margin: 0px 0px 0px 250px; */
 }
 
 nav{
@@ -174,7 +193,8 @@ box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
 }
 
 
-.home-area button{
+.home-area-content a{
+    display: inline-block;
     margin-top: 20px;
     padding: 10px 40px 10px 40px;
     border-radius: 50px;
@@ -182,9 +202,16 @@ box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
     border: none;
     color:rgb(48, 48, 48);
     cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    color: #484C4F;
 }
 
-
+.home-area-content a:hover{
+    background: rgb(241, 241, 241);
+transition: 0.25s;
+}
 
 
 .timer{
@@ -246,26 +273,36 @@ box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
     background: rgb(244, 247, 248);
     padding-top: 40px;
     padding-block-end: 40px;
+    direction: rtl;
+    text-align:center;
 
 }
 
-.moto h3{
-    text-align: center;
+.moto h2{
+    color:#484C4F;
 }
 
 .moto p{
     padding-top: 20px; 
-    text-align: center;
     margin: 0 auto;
-    max-width: 30%;
+    max-width: 40%;
+    color:#70767B;
+}
+
+.moto img{
+    padding-top: 20px;
+height: 150px;
 }
 
 .advertise{
     margin-top: 40px;
+    direction: rtl;
 }
 
-.advertise h3{
+.advertise h2{
     text-align: center;
+    color:#484C4F;
+
 }
 
 .advertise p{
@@ -273,11 +310,13 @@ box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
     text-align: center;
     margin: 0 auto;
     max-width: 60%;
+    color:#70767B;
+
 
 }
 
 .advertise img{
-    margin-top: 20px;
+    padding-top: 20px;
     display: block;
     margin: 0 auto;
 }
@@ -602,7 +641,7 @@ footer{
 
 .footer-content a{
 display: block;
-color: rgb(87, 90, 98);
+color: #8E909B;
 text-decoration: none;
 text-align: right;
 transition: 0.25s;
@@ -640,7 +679,7 @@ float: right;
 }
 .additional-links>a{
     font-size: 13px;
-    color: rgb(87, 90, 98);
+    color: #8E909B;
     text-decoration: none;
     padding-left: 10px;
 transition: 0.25s;
