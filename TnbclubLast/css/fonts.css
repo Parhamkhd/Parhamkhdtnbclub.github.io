@@ -1,0 +1,8 @@
+@import url(fontiran.css);
+* {
+    font-family: IRANSans !important;
+    font-weight: 300;
+    direction: rtl;
+    margin: 0;
+}
+
