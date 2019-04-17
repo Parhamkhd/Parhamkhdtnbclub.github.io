@@ -8,6 +8,15 @@
     src: url(../fonts/Spaceport_2006.otf);
 }
 
+
+
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
